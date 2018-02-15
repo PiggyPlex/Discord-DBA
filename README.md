@@ -93,7 +93,7 @@ And as last add the command input.
 
 Usage:
 ```js
-money.updateBal(message.author.id, amount in numbers);
+money.updateBal(message.author.id, /*amount in numbers*/);
 ```
 
 Sending the message to the channel you typed in and updating the balance.
@@ -107,7 +107,7 @@ And as last add the command input.
 ```js
 // Example: Updating Balance
         if (message.content.toUpperCase() === `${prefix}PAY`) {
-            money.updateBal(message.author.id).then((i) => { // money.fetchBal grabs the userID, finds it, and puts it into 'i'.
+            money.updateBal(message.author.id, 500).then((i) => { // money.fetchBal grabs the userID, finds it, and puts it into 'i'.
                 message.channel.send(`**You got $500!**\n**New Balance:** ${i.money}`);
             });
         }

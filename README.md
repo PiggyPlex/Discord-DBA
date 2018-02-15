@@ -10,11 +10,11 @@ Discord-money is made for [discord.js](https://discord.js.org/#/) verions 11.3.0
 
 - [Javascript](#Javascript)
 	- [DiscordAPI](#DiscordAPI)
-	          - [Discord.js](#Discord.js)
-	                    - [v11.3.0](#v11.3.0)
-	          - [Discord-money](#Discord-money)
-	                    - [npm](#npm)
-	                              - [npm install discord-money](#npm install discord-money)
+	 - [Discord.js](#Discord.js)
+	 - [v11.3.0](#v11.3.0)
+	 - [Discord-money](#Discord-money)
+	 - [npm](#npm)
+	 - [npm install discord-money](#npm install discord-money)
                                         
 ## Information
 

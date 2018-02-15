@@ -1,0 +1,43 @@
+{
+  "_from": "discord-money@0.1.6",
+  "_id": "discord-money@0.1.6",
+  "_inBundle": false,
+  "_integrity": "sha512-6z6ROzqG5x2NDFv3nPtlONq0V/V3t9Wy1Ct1tWb2T7Y3vU3avyJ3TDHLqEahK1usIDgcLMdU9dHyT3nkfsltRw==",
+  "_location": "/discord-money",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "discord-money@0.1.6",
+    "name": "discord-money",
+    "escapedName": "discord-money",
+    "rawSpec": "0.1.6",
+    "saveSpec": null,
+    "fetchSpec": "0.1.6"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/discord-money/-/discord-money-0.1.6.tgz",
+  "_shasum": "71043b728897df2d33c1c5de1cbc91e9e59b5c55",
+  "_spec": "discord-money@0.1.6",
+  "_where": "C:\\Users\\gusth\\Desktop\\Citex\\CitexTestBot",
+  "author": {
+    "name": "Citex Developers"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "discord-money is made for discord.js, you add an economy to your bot by adding money commands.",
+  "keywords": [
+    "d-money",
+    "discord-money"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "discord-money",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.1.6"
+}

@@ -107,7 +107,7 @@ And as last add the command input.
 ```js
 // Example: Updating Balance
         if (message.content.toUpperCase() === `${prefix}PAY`) {
-            money.updateBal(message.author.id, 500).then((i) => { // money.fetchBal grabs the userID, finds it, and puts it into 'i'.
+            money.updateBal(message.author.id, 500).then((i) => { // money.updateBal grabs the userID, finds it, and puts it into 'i'.
                 message.channel.send(`**You got $500!**\n**New Balance:** ${i.money}`);
             });
         }

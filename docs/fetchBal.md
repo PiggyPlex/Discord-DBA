@@ -1,4 +1,5 @@
 ### dba#fetchBal
+Method of [dba](./dba.md)
 ### Usage
 ```js
 <dba>.fetchBal(id)

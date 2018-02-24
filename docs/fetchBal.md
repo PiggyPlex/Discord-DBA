@@ -1,7 +1,7 @@
-### fetchBal
+### dba#fetchBal
 ### Usage
 ```js
-<discord-dba>.fetchBal(id)
+<dba>.fetchBal(id)
 ```
 
 | Parameter | Type | Optional | Description |

@@ -35,6 +35,8 @@ client.on('message', message => {
     if (robRecently.has(message.author.id)) return message.reply('You must wait the 1m Cooldown!');
     if (!message.mentions.members.first()) return message.reply('You must mention a user to rob!');
     const member = message.mentions.members.first();
+    if (member.id==message.author.id) return message.reply('Why are you trying to rob yourself?');
+    if (member.user.bot) return message.reply('You can\'t rob a bot!');
     if (random(1,2)==1) {
       dba.updateBal(message.author.id, 100).then((i) => {
         message.channel.send(`**You Robbed $100 from ${member.user.tag}!**\n**New Balance:** $${i.money}`);

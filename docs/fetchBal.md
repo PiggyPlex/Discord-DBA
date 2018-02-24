@@ -19,13 +19,11 @@
       console.log(`Logged in as ${client.user.tag}!`);
     });
     
-    // When a message is received by the bot
     client.on('message', message => {
       if (!message.content.startsWith(prefix)) return;
       if (message.author.bot) return;
       let command = message.content.split(/\s+/g)[0].slice(prefix.length).toLowerCase();
       let args = message.content.split(/\s+/g).slice(1);
-      console.log(prefix + command + " " + args.join(' '))
       if (command === "bal" || command === "balance") {
             dba.fetchBal(message.author.id).then((i) => {
                 message.channel.send(`**Balance:** ${i.money}`);

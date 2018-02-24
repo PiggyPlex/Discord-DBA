@@ -6,4 +6,4 @@ const dba = require('discord-dba');
 ### Methods
 > [fetchBal](./fetchBal.md)
 
-> updateBal
+> [updateBal](./updateBal.md)

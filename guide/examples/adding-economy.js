@@ -22,7 +22,7 @@ client.on('message', message => {
   if (command === 'work') {
     if (workRecently.has(message.author.id)) return message.reply('You must wait the 30s Cooldown!');
     dba.updateBal(message.author.id, 100).then((i) => {
-      message.channel.send(`**Some Hard work has earned you $100!**\n**New Balance:** ${i.money}`);
+      message.channel.send(`**Some Hard work has earned you $100!**\n**New Balance:** $${i.money}`);
     });
     // Adds the user to the set so that they can't work for another 30s
     workRecently.add(message.author.id);
@@ -37,12 +37,12 @@ client.on('message', message => {
     const member = message.mentions.members.first();
     if (random(1,2)==1) {
       dba.updateBal(message.author.id, 100).then((i) => {
-        message.channel.send(`**You Robbed $100 from ${member.user.tag}!**\n**New Balance:** ${i.money}`);
+        message.channel.send(`**You Robbed $100 from ${member.user.tag}!**\n**New Balance:** $${i.money}`);
       });
       dba.updateBal(member.id, -100);
     } else {
       dba.updateBal(message.author.id, -20).then((i) => {
-        message.channel.send(`**You were caught trying to rob $100 from ${member.user.tag}! You have been fined $20!**\n**New Balance:** ${i.money}`);
+        message.channel.send(`**You were caught trying to rob $100 from ${member.user.tag}! You have been fined $20!**\n**New Balance:** $${i.money}`);
       });
     };
     // Adds the user to the set so that they can't rob for another 1m

@@ -19,6 +19,12 @@ client.on('message', message => {
   if (command === 'ping') {
     message.channel.send('Pong!');
   };
+  if (command === 'bal' || command === 'balance') {
+    const member = message.mentions.members.first() || message.member;
+    dba.fetchBal(member.id).then(output => {
+      message.channel.send(`**${member.user.tag} has $${output.money}**`);
+    });
+  };
   if (command === 'work') {
     if (workRecently.has(message.author.id)) return message.reply('You must wait the 30s Cooldown!');
     dba.updateBal(message.author.id, 100).then((i) => {

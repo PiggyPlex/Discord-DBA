@@ -4,6 +4,6 @@ You can require Discord-DBA in your bot file like this:
 const dba = require('discord-dba');
 ```
 ### Methods
-> fetchBal
+> [fetchBal](./fetchBal.md)
 
 > updateBal

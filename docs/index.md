@@ -1,5 +1,7 @@
 # Discord-DBA Unofficial Documentation
 [![https://nodei.co/npm/discord-dba.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/discord-dba.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/discord-dba)
+# Documentation Moved!
+The Unofficial Documentation has been moved to [https://piggyplex.gitbooks.io/discord-dba/](https://piggyplex.gitbooks.io/discord-dba/); updates will not happen here anymore!!!!
 ### About
 Discord-DBA is an easy way to implement economy into a bot.
 Discord-DBA is made for [discord.js](https://discord.js.org) verions 11.3.0 and above.

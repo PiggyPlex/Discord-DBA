@@ -1,6 +1,6 @@
 // Require Discord.js and Discord-DBA
 const Discord = require('discord.js');
-const dba = require('./discord-dba.js');
+const dba = require('discord-dba.js');
 // And Finally Create a new Discord Client
 const client = new Discord.Client();
 const workRecently = new Set();
